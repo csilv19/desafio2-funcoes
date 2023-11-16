@@ -26,29 +26,33 @@
 //Ao final deve se exibir uma mensagem:
 //"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
 
-let resultadoSaldo = saldoRanqueada(90, 33)
 
-function saldoRanqueada(numVitorias, numDerrotas) {
-    let resultadoSaldoT = numVitorias - numDerrotas
-    return resultadoSaldoT
+// Função para calcular o saldo de vitórias
+function calcularSaldoVitorias(numVitorias, numDerrotas) {
+    return numVitorias - numDerrotas;
 }
 
-let nivelRank = resultadoSaldo
+// Chama a função com valores específicos
+let resultadoSaldo = calcularSaldoVitorias(90, 33);
 
-if (nivelRank <= 10) {
+// Determina o nível de ranqueamento
+let nivelRank;
+
+if (resultadoSaldo <= 10) {
     nivelRank = "Ferro";
-} else if (nivelRank <= 20) {
+} else if (resultadoSaldo <= 20) {
     nivelRank = "Bronze";
-} else if (nivelRank <= 50) {
+} else if (resultadoSaldo <= 50) {
     nivelRank = "Prata";
-} else if (nivelRank <= 80) {
+} else if (resultadoSaldo <= 80) {
     nivelRank = "Ouro";
-} else if (nivelRank <= 90) {
+} else if (resultadoSaldo <= 90) {
     nivelRank = "Diamante";
-} else if (nivelRank <= 100) {
+} else if (resultadoSaldo <= 100) {
     nivelRank = "Lendário";
-} else if (nivelRank >= 101) {
+} else {
     nivelRank = "Imortal";
 }
 
-    console.log(`O Herói tem de saldo de ${resultadoSaldo} vitórias, e está no nível de ${nivelRank}`)
+// Exibe o resultado no console
+console.log(`O Herói tem um saldo de ${resultadoSaldo} vitórias e está no nível de ${nivelRank}`);
