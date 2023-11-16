@@ -1,5 +1,3 @@
-# script.js
-
 # Análise do Código JavaScript
 
 ## Descrição
@@ -20,22 +18,6 @@ O código chama a função saldoRanqueada com valores específicos (90 vitórias
 let resultadoSaldo = saldoRanqueada(90, 33);
 Determinação do Nível de Ranqueamento
 Com base no saldo calculado, o código determina o nível de ranqueamento (nivelRank) utilizando faixas predefinidas.
-
-if (nivelRank <= 10) {
-    nivelRank = "Ferro";
-} else if (nivelRank <= 20) {
-    nivelRank = "Bronze";
-} else if (nivelRank <= 50) {
-    nivelRank = "Prata";
-} else if (nivelRank <= 80) {
-    nivelRank = "Ouro";
-} else if (nivelRank <= 90) {
-    nivelRank = "Diamante";
-} else if (nivelRank <= 100) {
-    nivelRank = "Lendário";
-} else {
-    nivelRank = "Imortal";
-}
 
 ## Exibição do Resultado
 
